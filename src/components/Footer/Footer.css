@@ -1,0 +1,44 @@
+.footer{
+    margin-bottom: 20px;
+}
+
+.foot{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 5px;
+}
+
+.foot__title{
+    font-size: 2.5rem;
+    font-weight: 550;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.foot ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.foot a{
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+@media screen and (width<900) {
+    .foot{
+
+    margin-bottom: 5px;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+.foot__title{
+    font-size: 0.8rem;
+    font-weight: 550;
+}
+
+.foot a{
+    display: none;
+}
+}

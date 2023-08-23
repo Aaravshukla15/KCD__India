@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+
+:root {
+  --primary-color: #d00000;
+  --primary-color-dark: #858686;
+  --secondary-color: #fafcff;
+  --text-dark: #2e2e2e;
+  --text-darker: #2e2e2e;
+  --text-light: #2e2e2e;
+  --extra-light: #ffffff;
+  --extra-lighter: #2e2e2e;
+  --max-width: 1200px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.explore{
+  margin-top: 40px;
+}
+
+.section__container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 5rem 1rem;
+  padding-bottom: 0%;
+  
+}
+
+.section__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  font-weight: bold;
+  flex-wrap: wrap;
+  
+  margin-bottom: 4rem;
+}
+
+.section__title {
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.section__subtitle {
+  font-size: 1.5rem;
+  color: var(--text-dark);
+  max-width: calc(var(--max-width) / 2);
+  text-align: center;
+}
+
+
+
+.bt {
+  padding: 0.75rem 2rem;
+  /* outline: none;
+  border: none;
+  font-size: 1.1rem; */
+  color: var(--primary-color);
+  border-color: #d00000;
+  /* border-radius: 4rem;
+  cursor: pointer;
+  transition: 0.3s; */
+    
+  align-items: center;
+    border-radius: 4px;
+    display: inline-flex;
+    flex: 0 0 auto;
+    font-weight: 500;
+    letter-spacing: .0892857143em;
+    justify-content: center;
+    outline: 0;
+    position: relative;
+    text-decoration: none;
+    text-indent: 0.0892857143em;
+    text-transform: uppercase;
+    transition-duration: .28s;
+    transition-property: box-shadow,transform,opacity;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+
+.bt:hover {
+  background-color: #ffcccc;
+}
+
+.btns:hover {
+  background-color: var(--extra-lighter);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+/* explore start */
+
+.explore {
+  background-color: var(--secondary-color);
+}
+
+.explore__container :is(.section__title, .section__subtitle, .view__all) {
+  text-align: center, justify;
+  margin-right: auto;
+  margin-left: auto;
+  font-weight: bold;
+}
+
+.explore__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 4rem 0;
+}
+
+.explore__card {
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+}
+
+.explore__details {
+  padding: 1rem;
+  display: grid;
+  gap: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  background-color: var(--extra-light);
+  cursor: pointer;
+}
+
+
+.Click__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.box span {
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: var(--text-light);
+}
+
+.explore__now {
+  padding: 0.5rem 1.5rem;
+  color: var(--primary-color);
+  outline: none;
+  border: 1px solid var(--primary-color);
+  border-radius: 5rem;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hee{
+    font-size: 3rem;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 15px;
+    font-weight: 100;
+    color: #d00000;
+}
+.pee{
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    font-size: 1.8rem;
+    line-height: 30px;
+}
+.view__al{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 18%;
+}
+
+
+.explore__now:hover {
+  color: var(--extra-light);
+  background-color: var(--primary-color);
+}
+
+@media screen and (width<900px) {
+
+     .explore__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (width<600px) {
+
+   .explore__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .hee{
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+
+.pee{
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+.view__al{
+  width: 50%;
+}
+
+}
+
+ 

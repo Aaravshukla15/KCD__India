@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+
+:root {
+  --primary-color: #d00000;
+  --primary-color-dark: #858686;
+  --secondary-color: #fafcff;
+  --text-dark: #2e2e2e;
+  --text-darker: #2e2e2e;
+  --text-light: #2e2e2e;
+  --extra-light: #ffffff;
+  --extra-lighter: #2e2e2e;
+  --max-width: 1200px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.section__container {
+  max-width: var(--max-width);
+  margin: auto;
+  margin-top: 20px;
+  padding: 5rem 1rem;
+  padding-bottom: 0%;
+  padding-top: 5rem;
+}
+
+.section__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  font-weight: bold;
+  flex-wrap: wrap;
+  margin-bottom: 4rem;
+}
+
+.section__title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.section__subtitles {
+  font-size: 1rem;
+  color: var(--text-dark);
+  max-width: calc(var(--max-width) / 2);
+  text-align: justify;
+}
+
+.btn {
+  padding: 0.75rem 2rem;
+  outline: none;
+  border: none;
+  font-size: 1.1rem;
+  color: var(--extra-light);
+  background-color: var(--primary-color);
+  border-radius: 4rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btns {
+  padding: 0.75rem 2rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  color: var(--extra-light);
+  background-color: var(--primary-color);
+  border-radius: 4rem;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.btn:hover {
+  background-color: var(--extra-lighter);
+}
+
+.btns:hover {
+  background-color: var(--extra-lighter);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  background-color: var(--secondary-color);
+}
+
+.header__container {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  flex-direction: column;
+  gap: 2rem;
+  
+}
+
+.header__image {
+  position: relative;
+}
+
+.header__image img {
+  position: absolute;
+  top: 58%;
+  left: 64%;
+  /* border: 0.5rem solid var(--extra-lighter);
+  border-radius: 1rem;
+  box-shadow: 5px 5px 30px #2e2e2e; */
+}
+
+.header__image img:nth-child(1) {
+  margin: 0%;
+  max-width: 330px;
+  transform: translate(-159%, -80%);
+}
+
+.header__image img:nth-child(2) {
+  max-width: 530px;
+  transform: translate(-56%, -58%);
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__content > div {
+  max-width: 500px;
+  display: grid;
+  gap: 1rem;
+  margin-left: 50px;
+}
+
+
+.header__content .sub__header {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.left__about {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-weight: 400;
+  color: var(--text-darker);
+}
+
+.left__ab{
+    color: var(--primary-color);
+}
+
+.left__month{
+    font-size: 2rem;
+    font-weight: 400;
+    /* color: var(--); */
+    
+}
+
+.header__content h1 {
+  font-size: 3rem;
+  line-height: 4rem;
+  font-weight: 800;
+  color: var(--primary-color);
+}
+
+.header__content .action__btns {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.story {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  cursor: pointer;
+}
+
+.video__image {
+  position: relative;
+}
+
+.video__image img {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  box-shadow: 5px 5px 30px #2e2e2e;
+}
+
+.video__image span {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+}
+
+.video__image span i {
+  padding: 0.5rem;
+  font-size: 2rem;
+  color: red;
+  background-color: var(--extra-light);
+  border-radius: 100%;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+}
+
+.story > span {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+@media (width < 900px) {
+
+
+  .header__container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header__image{
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header__image img{
+    top: 90%;
+    left: 75%;
+  }
+  .header__image img:nth-child(1) {
+    max-width: 160px;
+    min-height: 150px;
+  }
+
+  .header__image img:nth-child(2) {
+    max-width: 220px;
+    min-height: 300px;
+  }
+  .header__content > div{
+    margin: 0%;
+  }
+
+  .header__container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .header__image {
+    min-height: 240px;
+  }
+}
