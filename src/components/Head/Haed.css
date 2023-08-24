@@ -52,38 +52,42 @@
   text-align: justify;
 }
 
-.btn {
+.bns {
   padding: 0.75rem 2rem;
-  outline: none;
+  /* outline: none;
   border: none;
-  font-size: 1.1rem;
-  color: var(--extra-light);
-  background-color: var(--primary-color);
-  border-radius: 4rem;
+  font-size: 1.1rem; */
+  color: var(--primary-color);
+  border-color: #d00000;
+  /* border-radius: 4rem;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.3s; */
+  width: 100%;
+    
+  align-items: center;
+    border-radius: 4px;
+    display: inline-flex;
+    flex: 0 0 auto;
+    font-weight: 500;
+    letter-spacing: .0892857143em;
+    justify-content: center;
+    outline: 0;
+    position: relative;
+    text-decoration: none;
+    text-indent: 0.0892857143em;
+    text-transform: uppercase;
+    transition-duration: .28s;
+    transition-property: box-shadow,transform,opacity;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
 }
 
-.btns {
-  padding: 0.75rem 2rem;
-  outline: none;
-  border: none;
-  font-size: 1rem;
-  color: var(--extra-light);
-  background-color: var(--primary-color);
-  border-radius: 4rem;
-  cursor: pointer;
-  transition: 0.3s;
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
-.btn:hover {
-  background-color: var(--extra-lighter);
-}
-
-.btns:hover {
-  background-color: var(--extra-lighter);
+.bns:hover {
+  background-color: #ffcccc;
 }
 
 a {
@@ -120,7 +124,7 @@ header {
   position: absolute;
   top: 58%;
   left: 64%;
-  /* border: 0.5rem solid var(--extra-lighter);
+  /* border: 0.1rem solid var(--extra-lighter);
   border-radius: 1rem;
   box-shadow: 5px 5px 30px #2e2e2e; */
 }
@@ -168,7 +172,7 @@ header {
 }
 
 .left__month{
-    font-size: 2rem;
+    font-size: 2.4rem;
     font-weight: 400;
     /* color: var(--); */
     
@@ -183,13 +187,17 @@ header {
 
 .header__content .action__btns {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  /* align-items: center; */
   gap: 2rem;
   margin-top: 1rem;
 }
 
+
+
 .story {
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 2rem;
   cursor: pointer;
@@ -208,7 +216,6 @@ header {
 
 .video__image span {
   position: absolute;
-  top: 50%;
   left: 100%;
   transform: translate(-50%, -50%);
 }
@@ -224,6 +231,7 @@ header {
 
 .story > span {
   font-size: 2rem;
+  align-items: center;
   font-weight: 600;
   color: var(--text-dark);
 }
@@ -239,6 +247,11 @@ header {
   .header__image{
     align-items: center;
     justify-content: center;
+  }
+
+  .action__btns{
+    display: flex;
+    flex-direction: column;
   }
 
   .header__image img{

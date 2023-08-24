@@ -1,7 +1,7 @@
 import React from 'react';
 import './NearU.css'
-import KCD_C from '../../images/KCD Chandigarh.jpg';
-import KCD_D from '../../images/KCD Durg.jpg';
+import KCD_C from '../../images/KCD Chandigarh.png';
+import KCD_D from '../../images/KCD DURG.png';
 import KCD_J from '../../images/KCD Jaipur.png'
 
 

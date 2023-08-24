@@ -106,9 +106,9 @@ body {
   /* top: 30%; */
   margin: 0%;
   left: -10%;
-  /* border: 0.5rem solid var(--extra-lighter); */
+  border: 0.5rem solid var(--extra-lighter);
   border-radius: 2rem;
-  /* box-shadow: 5px 5px 30px #2e2e2e; */
+  box-shadow: 5px 5px 30px #2e2e2e;
 }
 
 .secheader__content {
